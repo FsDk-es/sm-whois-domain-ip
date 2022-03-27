@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Obtener informacion del propietario del dominio o de una ip",
   "main": "index.js",
+   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm node src/sistema/index.js"
   },
   "author": "FsDk - Jose Antonio Gimenez Cayuela",
   "license": "ISC",
