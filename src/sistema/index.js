@@ -1,3 +1,8 @@
+/*
+FsDk - Jose Antonio Gimenez Cayuela 
+Simple app para obtener informacion de 1 dominio
+*/
+
 import fetch from 'node-fetch';
 
 let peticion = 'chatozu.org'
@@ -8,10 +13,9 @@ const palabraKey = 'key=';
 const palabraDomain = 'domain='
 
 //debug
-console.log(urlConsulta + palabraKey + keyToken + intermedioConsulta + palabraDomain + peticion);
-
 const response = await fetch(urlConsulta + palabraKey + keyToken + intermedioConsulta + palabraDomain + peticion);
-const consulta = await response.json();
+const consulta = await response.json()
+console.log(urlConsulta + palabraKey + keyToken + intermedioConsulta + palabraDomain + peticion);
 
 let nombreDeDominio = consulta['domain'];
 let idDominio = consulta['domain_id'];
@@ -33,7 +37,3 @@ console.log('Provincia del registrante:' + ' ' + provincia);
 console.log('Pais del registrante:' + pais);
 console.log('Servidores DNS:' + ' ' + servidoresNS);
 console.log('========Fin de la consulta==========');
-pause
-
-
-
