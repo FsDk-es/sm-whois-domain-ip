@@ -2,6 +2,8 @@
 FsDk - Jose Antonio Gimenez Cayuela 
 Simple app para obtener informacion de 1 dominio
 */
+let config1 = require('../../config.js');
+console.log(config);
 
 import fetch from 'node-fetch';
 let dominioAconsultar = process.argv[2];
@@ -13,11 +15,15 @@ const intermedioConsulta = '&'
 const palabraKey = 'key=';
 const palabraDomain = 'domain='
 
-//debug
-const response = await fetch(urlConsulta + palabraKey + keyToken + intermedioConsulta + palabraDomain + peticion);
-const consulta = await response.json()
-console.log(urlConsulta + palabraKey + keyToken + intermedioConsulta + palabraDomain + peticion);
+
 /*
+//debug/
+const response = await fetch(urlConsulta + palabraKey + keyToken + intermedioConsulta + palabraDomain + peticion);
+const consulta = await response.json();
+console.log(urlConsulta + palabraKey + keyToken + intermedioConsulta + palabraDomain + peticion);
+*/
+/*
+
 let nombreDeDominio = consulta['domain'];
 let idDominio = consulta['domain_id'];
 let estadoDominio = consulta['status'];
@@ -39,4 +45,4 @@ console.log('Pais del registrante:' + pais);
 console.log('Servidores DNS:' + ' ' + servidoresNS);
 console.log('========Fin de la consulta==========');
 */
-console.log(consulta);
+//console.log(consulta);
