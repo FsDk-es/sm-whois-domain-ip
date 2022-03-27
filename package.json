@@ -1,0 +1,14 @@
+{
+  "name": "sm-whois-domain-ip",
+  "version": "1.0.0",
+  "description": "Obtener informacion del propietario del dominio o de una ip",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "FsDk - Jose Antonio Gimenez Cayuela",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^3.2.3"
+  }
+}
