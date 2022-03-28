@@ -27,7 +27,7 @@ const consulta = await response.json();
 
 if (consulta.error != null) {
     console.log('Codigo de error' + ' ' + consulta.error.error_code);
-    console.log('Mensaje de error:' + ' ' + consulta.error.error_message);
+    console.log('Mensaje de error:' + ' ' + consulta.error.error_message.replace('Invalid domain.', 'Dominio No Valido'));
     process.exit(); 
 }
 
